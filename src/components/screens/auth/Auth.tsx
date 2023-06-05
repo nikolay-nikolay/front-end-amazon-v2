@@ -76,13 +76,15 @@ const Auth: FC = () => {
 								placeholder='Password'
 								error={errors.password?.message}
 							/>
+							<div className=' text-center'>
 							<Button type='submit' variant='orange'>
 								Let's go!
 							</Button>{' '}
-							<div>
+							</div>
+							<div className=' text-right'>
 								<button
 									type='button'
-									className='inline-block opacity-20 mt-3 text-sm'
+									className='inline-block opacity-50 mt-5  text-sm'
 									onClick={() =>
 										setType(type === 'login' ? 'register' : 'login')
 									}

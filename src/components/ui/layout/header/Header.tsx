@@ -21,7 +21,7 @@ const Header: FC = () => {
 					width={180}
 					height={37}
 					src='/images/logo.svg'
-					alt='Amazon v2'
+					alt='Amazon'
 				/>
 			</Link>
 			<Search />

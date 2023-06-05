@@ -42,16 +42,16 @@ const CatalogPagination: FC<ICatalogPagination> = ({ data, title }) => {
 
 	return (
 		<section>
-			{title && <Heading className='mb-5'>{title}</Heading>}
+			{title && <Heading className='mb-5 '>{title}</Heading>}
 			<SortDropdown sortType={sortType} setSortType={setSortType} />
 			{response.products.length ? (
 				<>
-					<div className='grid grid-cols-4 gap-10'>
+					<div className='grid grid-cols-4 gap-10 '>
 						{response.products.map(product => (
 							<ProductItem key={product.id} product={product} />
 						))}
 					</div>
-					<div className='text-center mt-16'>
+					<div className='text-center mt-16 '>
 						{Array.from({ length: response.length / 3}).map((_, index) => {
 							const pageNumber = index + 1
 							return (

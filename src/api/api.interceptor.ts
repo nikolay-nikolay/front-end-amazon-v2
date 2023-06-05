@@ -42,7 +42,6 @@ instance.interceptors.response.use(
 				if (errorCatch(error) === 'jwt expired') removeFromStorage()
 			}
 		}
-
 		throw error
 	}
 )
